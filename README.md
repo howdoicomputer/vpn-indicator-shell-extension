@@ -2,9 +2,9 @@
 
 ![alt tag](demo.png)
 
-This is a *really* simple extension that is basically polls for a tun0 device from ifconfig on a three second timer. Regardless of its simplicity, it was actually incredibly difficult to make due to a lack of documentation on Gnome Shell extensions.
+This is a *really* simple extension that basically polls for a tun0 device from ifconfig on a three second timer. Simple purpose aside, it was actually incredibly difficult to make due to a lack of documentation on Gnome Shell extensions.
 
-I would like to note down these pieces of documentation:
+I would like to note down these pieces of documentation for anyone stumbling across this repo:
 
 * http://smasue.github.io/gnome-shell-tw
 * https://people.gnome.org/~gcampagna/docs/GLib-2.0/GLib.spawn_sync.html
