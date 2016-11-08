@@ -1,0 +1,6 @@
+{
+    "uuid": "vpn-indicator@howdoicomputer.fastmail.com",
+    "shell-version": ["3.22.1"],
+    "name": "VPN Indicator",
+    "description": "A status indicator for a VPN connection."
+}
