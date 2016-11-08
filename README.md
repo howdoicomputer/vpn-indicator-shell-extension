@@ -11,7 +11,7 @@ I would like to note down these pieces of documentation for anyone stumbling acr
 
 ## Installation
 
-1. `git clone https://github.com/howdoicomputer/vpn-indicator-gnome-extension`
+1. `git clone https://github.com/howdoicomputer/vpn-indicator-shell-extension.git`
 2. `./install.sh`
 
 3. Then you'll want to activate the plugin either by using the Gnome Tweak Tool or by execing `gnome-shell-extension-prefs` and using that UI.
