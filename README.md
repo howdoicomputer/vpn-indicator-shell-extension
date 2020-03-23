@@ -1,6 +1,8 @@
 ## VPN Indicator Extension
 
-![alt tag](demo.png)
+![](up.png)
+
+![](down.png)
 
 This is a *really* simple extension that basically polls for a tun0 device from ifconfig on a three second timer. Simple purpose aside, it was actually incredibly difficult to make due to a lack of documentation on Gnome Shell extensions.
 

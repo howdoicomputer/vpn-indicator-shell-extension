@@ -40,14 +40,17 @@ const VpnIndicator = new Lang.Class({
     },
 
     _refreshUI: function(data) {
-        var text;
+        var text = "VPN ";
 
-        if (data == 256) {
-            text = "VPN is down!";
-        } else if (data == 0) {
-            text = "VPN is up!";
-        } else {
-            text = "Error!";
+        if (data == 256) { // VPN is down
+            this.buttonText.set_style('color: #ffcc00; margin-top: 3px; margin-bottom: 0px;'); // orange
+            text += '\u2b07'; // down arrow (⬇)
+        } else if (data == 0) { // VPN is up
+            this.buttonText.set_style('color: #00ff99; margin-top: 3px; margin-bottom: 0px;'); // green
+            text += '\ud83d\udee1'; // shield (🛡)
+        } else { // error
+            this.buttonText.set_style('margin-top: 3px; margin-bottom: 0px;');
+            text += '\u2754'; // question mark (❔)
         }
 
         this.buttonText.set_text(text);
