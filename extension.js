@@ -23,7 +23,7 @@ const VpnIndicator = new Lang.Class({
     },
 
     _checkVPN: function() {
-        let [res, out, err, exit] = GLib.spawn_sync(null, ["/bin/bash", "-c", "ifconfig -a | grep tun0"], null, GLib.SpawnFlags.SEARCH_PATH, null);
+        let [res, out, err, exit] = GLib.spawn_sync(null, ["/bin/bash", "-c", "ifconfig -a | grep -E '^(tun0|proton0)'"], null, GLib.SpawnFlags.SEARCH_PATH, null);
 
         return exit;
     },
